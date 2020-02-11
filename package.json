@@ -1,0 +1,22 @@
+{
+  "name": "covercss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx parcel src/index.html",
+    "linter": "npx stylelint src/css/*.css"
+  },
+  "author": "Jennifer",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "postcss-cli": "^7.1.0",
+    "stylelint": "^13.1.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "lodash-es": "^4.0.0"
+  }
+}
