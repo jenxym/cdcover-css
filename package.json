@@ -1,5 +1,5 @@
 {
-	"name": "cdcover-css",
+	"name": "vinylcssjs",
 	"version": "1.0.0",
 	"description": "",
 	"main": "src/index.html",
@@ -19,7 +19,5 @@
 		"stylelint": "^13.3.2",
 		"stylelint-config-standard": "^20.0.0"
 	},
-	"dependencies": {
-		"lodash-es": "^4.17.14"
-	}
+	"dependencies": {}
 }

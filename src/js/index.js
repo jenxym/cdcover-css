@@ -30,7 +30,6 @@ vinyl.addEventListener('click', () => {
 });
 
 buttonPlay.addEventListener('click', () => {
-	spinVinyl();
 	updateBrazo();
 	setTimeout(() => musicBg.play(), 1000);
 });
@@ -42,9 +41,7 @@ buttonPause.addEventListener('click', () => {
 
 const spinVinyl = () => vinylAnimation.play();
 const stopVinyl = () => vinylAnimation.pause();
-const setBrazo = (n) => {
-	brazo.style.transform = 'rotate(' + n + 'deg)';
-};
+
 const stopBrazo = () => {
 	clearInterval(intervalMusicPlaying);
 	brazo.style.transform = 'rotate(0deg)';
@@ -54,8 +51,11 @@ function getBrazoDeg() {
 	const h = 160 - Math.round((160 * musicBg.currentTime) / musicBg.duration);
 	const radianes = Math.atan(h / 300);
 	const deg = radianes / (Math.PI / 180);
-	return deg + 4;
+	return deg + 5;
 }
+const setBrazo = (n) => {
+	brazo.style.transform = 'rotate(' + n + 'deg)';
+};
 function updateBrazo() {
 	intervalMusicPlaying = setInterval(() => {
 		setBrazo(getBrazoDeg());
