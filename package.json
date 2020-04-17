@@ -1,25 +1,25 @@
 {
-  "name": "covercss",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx parcel src/index.html --open",
-    "linter": "npx stylelint src/css/*.css",
-    "deploy": "gh-pages -d dist",
-    "build" : "rm -rf dist && parcel build src/index.html --no-source-maps --public-url ./"
-  },
-  "author": "Jennifer",
-  "license": "ISC",
-  "devDependencies": {
-    "gh-pages": "^2.2.0",
-    "parcel-bundler": "^1.12.4",
-    "postcss-cli": "^7.1.0",
-    "stylelint": "^13.1.0",
-    "stylelint-config-standard": "^20.0.0"
-  },
-  "dependencies": {
-    "lodash-es": "^4.17.14"
-  }
+	"name": "cdcover-css",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.html",
+	"scripts": {
+		"start": "npx parcel %npm_package_main%",
+		"linter": "npx stylelint src/css/*.css",
+		"prebuild": "del /f dist build",
+		"build": "parcel build %npm_package_main% -d build --public-url ./",
+		"deploy": "gh-pages -d build"
+	},
+	"author": "Jennifer",
+	"license": "ISC",
+	"devDependencies": {
+		"gh-pages": "^2.2.0",
+		"parcel-bundler": "^1.12.4",
+		"postcss-cli": "^7.1.0",
+		"stylelint": "^13.3.2",
+		"stylelint-config-standard": "^20.0.0"
+	},
+	"dependencies": {
+		"lodash-es": "^4.17.14"
+	}
 }
