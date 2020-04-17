@@ -1,5 +1,5 @@
 # Vinyl CSS + JS
-Vinyl Cover with CSS + JSS
+AC/DC BLACK IN BLACK Vinyl with CSS + JSS. Includes music.
 
 ## Project setup
 ```
